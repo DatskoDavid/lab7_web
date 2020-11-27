@@ -1,0 +1,350 @@
+main {
+    font-family: 'Andale Mono', monospace;
+    font-size: 20px; 
+}
+
+a {
+    text-decoration-line: none;
+}
+
+h2 {
+    font-style: italic;
+}
+
+li {
+    list-style-type: none;
+}
+
+article {
+    margin: 30px;
+    margin-bottom: 50px;
+}
+
+.task1-art {
+    display: block;
+}
+
+.task1-art div span {
+    padding: 10px;
+    background-color: #FFF8DC;
+    color: #2F4F4F;
+    border: 5px solid #FFF8DC;
+    margin: 5px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    
+}
+
+.task1-art div span:hover{
+    background-color: white;
+    color: black;
+    border-color: white;;
+    border-bottom: 5px solid #E9967A;
+    cursor: pointer;    
+}
+
+
+.task2-art div {
+    font-size: 20px;
+}
+
+.task2-art div ul {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    width: 200px;
+    color: white;
+    background-color: #483DFF;
+    border: 1px solid gray;
+    border-bottom: none;
+}
+
+.task2-art div ul li{
+    padding-top: 20px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    position: relative;
+}
+
+.task2-art div ul li:hover{
+    background-color: #483DAA; 
+    color: black;
+}
+
+.task2-art div ul li:hover ul{
+    display: block; 
+}
+
+.task2-art div ul li:hover ul li ul{
+    display: none; 
+}
+
+.task2-art div ul li a {
+    margin-left: 23px;
+    color: white;
+    padding: 10px 20 px;
+    display: block;
+    font-weight: bold;
+}
+
+
+.task2-art div ul li ul {
+    background-color: green;
+    color: white;
+}
+
+.task2-art div ul li ul li:hover {
+    background-color: darkgreen;
+    color: azure;
+}
+
+.task2-art div ul li ul {
+    position: absolute;
+    left: 200px; top: 0px;
+    display: none;
+}
+
+
+
+
+.task3-article {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.task3-article .initial-state-div {
+    background-color: darkgreen;
+    height: 80px;
+    position: relative;
+}
+
+.task3-article .final-state-div {
+    background-color: darkgreen;
+    height: 400px;
+    position: relative;
+    visibility: hidden;
+    transition: 2s;
+}
+
+.open-close-checkbox {
+     position: absolute;
+     right: 80px; top: 30px;
+/*     display: none;*/
+}
+
+.burger-line {
+    
+    position: absolute;
+    top: 20px; right: 20px;
+    width: 50px;
+    height: 5px;
+    background-color: #FFF;
+}
+
+.second, .third {
+    top: 35px;
+}
+
+.fourth {
+    top: 50px;
+}
+
+
+.task3-article div input[type="checkbox"]:checked ~ .final-state-div {
+    visibility: visible;
+
+}
+
+
+.burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 15px; top: 15px;
+    cursor: pointer;
+    
+    height: 50px;
+    width: 50px;
+}
+
+
+
+.menu-box{
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    top: 60px; right: 250px;
+}
+
+.menu-box li {
+    margin: 20px;
+        
+}
+
+.menu-box li a {
+    color: #FFF;
+}
+
+.task5-article {
+    margin-top: 200px;
+}
+
+.task5-article p{
+    margin-left: 50px;
+    font-family: 'Arial';
+    font-weight: 500;
+}
+
+.task5-article input{
+    display: none;
+}
+
+.radio span {
+    position: relative;
+    display: inline-block;
+    border: 5px solid gray;
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+
+
+.task5-article .radio input[type="radio"]:checked + span {
+    background: #FF7F50;
+}
+
+.task5-article .radio input[type="radio"]:checked + span::before {
+    background-color: white;
+    width: 8px; height: 8px;
+    position: absolute; 
+    left: 6px; top: 6px;
+    border-radius: 50%;
+}
+
+.radio1,
+.radio2, 
+.radio3 {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.task5-article .radio input[type="radio"]:hover + span {
+    border-color: #A9A9A9;
+    cursor: pointer;
+}
+
+.task5-article label:hover {
+    cursor: pointer;
+}
+
+/*/////////////////////////////////*/
+
+.for-checkbox {
+    margin-left: 45px;
+}
+.checkbox span {
+    position: relative;
+    display: inline-block;
+    border: 3px solid gray;
+    width: 20px; 
+    height: 20px;
+    background-color: gray;
+    border-radius: 20%;
+    transition: 0.25s;
+}
+
+.checkbox1,
+.checkbox2, 
+.checkbox3 {
+    position: relative;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.check {
+    visibility: hidden;
+    height: 10px;
+    width: 7px;
+    position: absolute;
+    display: inline-block;
+    top: 0px; left: 5px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    transform: skew(-40deg, 40deg);
+}
+.task5-article .checkbox input[type="checkbox"]:checked + span div{
+    visibility: visible;
+}
+
+.task5-article .checkbox input[type="checkbox"]:checked + span {
+    background-color: #CD5C5C;
+    border: 3px solid #CD5C5C;
+}
+
+.task5-article .checkbox input[type="checkbox"]:checked + span::before {
+    background-color: lightgray;
+    width: 8px; height: 8px;
+    position: absolute; 
+    left: 6px; top: 6px;
+    border-radius: 50%;
+}
+
+
+.task5-article .checkbox input[type="checkbox"]:hover + span {
+    border-color: darkgray;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+
+.task6-article table {
+    border-collapse: collapse;
+}
+
+
+
+td:first-of-type,
+td:last-of-type{
+    text-align: center;
+}
+
+td:nth-of-type(2){
+    padding-left: 15px;
+}
+
+table tr:first-child {
+    color: #FFF;
+    background-color: blueviolet;
+}
+
+table td:first-child {
+    color: white;
+    padding: 5px;
+}
+
+table td:nth-child(2) {
+    
+    padding-right: 15px;
+}
+
+table td:last-child {
+    border-left: 2px solid red;
+    color: red;
+    padding: 5px;
+}
+
+table tr:nth-child(2n+2){
+    background-color: #DDA0DD;
+}
+
+table tr:nth-child(2n+3){
+    background-color: lightgray;
+}

@@ -1,0 +1,98 @@
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-div {
+    background-image: url(../images/header-cover.jpg);
+    color: orange;
+    padding-left: 40px;
+    padding-top: 20px;
+    height: 150px;
+}
+
+.breadcreams {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.breadcreams a {
+    font-size: 20px;
+}
+.header-div p a {
+    color: orange;
+    margin-right: 50px;
+}
+
+.central-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.left-column{
+    text-align: center;
+    padding-top: 70px; 
+    width: 20%;
+}
+
+.central-part {
+    width: 55%;
+    padding: 15px;
+    font-family: "Calibri", sans-serif;
+}
+
+.right-column {
+    width: 25%;
+}
+
+.left-column,
+.right-column {
+    text-align: center;
+    padding-top: 70px;
+    background-color: bisque
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration-line: none;
+    font-family: 'Calibri', sans-serif;
+    font-size: 25px;
+    color: darkblue;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+p {
+    text-indent: 20px;
+}
+
+
+footer div {
+    background-color: lightblue;
+    height: 110px;
+    padding-top: 5px;
+}
+
+
+footer div ul li{
+    color: black;
+    margin-left: 60px;
+    margin-bottom: 10px
+}
+div {
+    border: 1px solid gra
+}

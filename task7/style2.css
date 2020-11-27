@@ -1,0 +1,113 @@
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-div {
+    background-image: url(../images/header-cover.jpg);
+    color: orange;
+    padding-left: 40px;
+    padding-top: 20px;
+    height: 150px;
+}
+
+.breadcreams {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.breadcreams a {
+    font-size: 20px;
+    margin-left: 5px;
+}
+.header-div p a {
+    color: orange;
+    margin-right: 50px;
+}
+
+.header-div ,
+.breadcreams a {
+    margin-right: 5px;
+} 
+
+.central-container {
+    position: relative;
+/*
+    display: flex;
+    justify-content: space-around;
+*/
+    
+}
+.left-column{
+    float: left;
+    width: 250px;
+    text-align: center;
+    padding-top: 70px; 
+}
+
+.central-part {
+    float: inherit;
+    width: auto;
+    font-family: "Calibri", sans-serif;
+    padding: 20px;
+}
+
+.right-column {
+    float: right;
+/*    position: relative;*/
+    width: 250px;
+}
+
+.left-column,
+.right-column {
+    text-align: center;
+    padding-top: 50px;
+    background-color: bisque
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration-line: none;
+    font-family: 'Calibri', sans-serif;
+    font-size: 20px;
+    color: darkblue;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+p {
+    text-indent: 20px;
+    line-height: normal;
+    padding: 
+}
+
+
+footer div {
+    background-color: lightblue;
+    height: 110px;
+    padding-top: 5px;
+}
+
+
+footer div ul li{
+    color: black;
+    margin-left: 60px;
+    margin-bottom: 10px
+}
+div {
+    border: 1px solid gra
+}
